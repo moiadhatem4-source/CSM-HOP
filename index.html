@@ -14,12 +14,10 @@
 
     <div id="launch-screen">
 
-        <!-- MATRIX BACKGROUND -->
         <div class="matrix-background" id="matrix"></div>
         <div class="background-grid"></div>
 
-        <!-- MAIN CONTENT -->
-        <div class="launch-content">
+        <main class="launch-content">
 
             <div class="system-status">
                 <span class="status-dot"></span>
@@ -28,21 +26,26 @@
 
             <!-- COLLEGE LOGO -->
             <div class="logo-container">
+
                 <img
-                    src="College-logo.png"
+                    src="./College-logo.png"
                     alt="College Logo"
                     id="college-logo"
+                    onerror="this.style.display='none'; document.getElementById('logo-error').style.display='block';"
                 >
+
+                <div id="logo-error" style="display:none; color:#51ffad; font-size:12px;">
+                    CSM
+                </div>
+
             </div>
 
-            <!-- BRAND -->
             <h1>CSM <span>HUB</span></h1>
 
             <p class="tagline">
                 BEYOND THE CODE. BEYOND LIMITS.
             </p>
 
-            <!-- TERMINAL -->
             <div class="terminal-box">
                 <p id="terminal-text">
                     Initializing CSM HUB system...
@@ -50,8 +53,7 @@
                 <span class="cursor">_</span>
             </div>
 
-            <!-- COUNTDOWN -->
-            <div class="countdown-section">
+            <section class="countdown-section">
 
                 <p class="countdown-label">
                     THE GATE OPENS IN
@@ -86,17 +88,15 @@
                     </div>
 
                 </div>
-            </div>
+            </section>
 
-            <!-- FOOTER -->
             <p class="footer-text">
                 A NEW DIGITAL SPACE FOR CSM STUDENTS
             </p>
 
-        </div>
+        </main>
     </div>
 
-    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
 
 </body>
