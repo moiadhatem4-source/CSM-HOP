@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
@@ -249,5 +250,28 @@ h1 span {
     .footer-text {
         font-size: 7px;
         letter-spacing: 2px;
+    }
+}#logo-container {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+#logo-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    mix-blend-mode: darken;
+    filter: drop-shadow(0 0 12px rgba(0, 255, 170, 0.25));
+    background: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+@media (max-width: 600px) {
+    #logo-container img {
+        width: 130px;
+        height: 130px;
     }
 }
